@@ -91,54 +91,6 @@ export const onDeleteWord = /* GraphQL */ `
     }
   }
 `;
-export const onCreateAIScenario = /* GraphQL */ `
-  subscription OnCreateAIScenario(
-    $filter: ModelSubscriptionAIScenarioFilterInput
-  ) {
-    onCreateAIScenario(filter: $filter) {
-      id
-      title
-      description
-      firstMessage
-      role
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
-export const onUpdateAIScenario = /* GraphQL */ `
-  subscription OnUpdateAIScenario(
-    $filter: ModelSubscriptionAIScenarioFilterInput
-  ) {
-    onUpdateAIScenario(filter: $filter) {
-      id
-      title
-      description
-      firstMessage
-      role
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
-export const onDeleteAIScenario = /* GraphQL */ `
-  subscription OnDeleteAIScenario(
-    $filter: ModelSubscriptionAIScenarioFilterInput
-  ) {
-    onDeleteAIScenario(filter: $filter) {
-      id
-      title
-      description
-      firstMessage
-      role
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
 export const onCreateWebsite = /* GraphQL */ `
   subscription OnCreateWebsite($filter: ModelSubscriptionWebsiteFilterInput) {
     onCreateWebsite(filter: $filter) {
@@ -170,48 +122,6 @@ export const onUpdateWebsite = /* GraphQL */ `
 export const onDeleteWebsite = /* GraphQL */ `
   subscription OnDeleteWebsite($filter: ModelSubscriptionWebsiteFilterInput) {
     onDeleteWebsite(filter: $filter) {
-      id
-      title
-      url
-      description
-      image
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
-export const onCreateYoutube = /* GraphQL */ `
-  subscription OnCreateYoutube($filter: ModelSubscriptionYoutubeFilterInput) {
-    onCreateYoutube(filter: $filter) {
-      id
-      title
-      url
-      description
-      image
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
-export const onUpdateYoutube = /* GraphQL */ `
-  subscription OnUpdateYoutube($filter: ModelSubscriptionYoutubeFilterInput) {
-    onUpdateYoutube(filter: $filter) {
-      id
-      title
-      url
-      description
-      image
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
-export const onDeleteYoutube = /* GraphQL */ `
-  subscription OnDeleteYoutube($filter: ModelSubscriptionYoutubeFilterInput) {
-    onDeleteYoutube(filter: $filter) {
       id
       title
       url

@@ -109,57 +109,6 @@ export const deleteWord = /* GraphQL */ `
     }
   }
 `;
-export const createAIScenario = /* GraphQL */ `
-  mutation CreateAIScenario(
-    $input: CreateAIScenarioInput!
-    $condition: ModelAIScenarioConditionInput
-  ) {
-    createAIScenario(input: $input, condition: $condition) {
-      id
-      title
-      description
-      firstMessage
-      role
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
-export const updateAIScenario = /* GraphQL */ `
-  mutation UpdateAIScenario(
-    $input: UpdateAIScenarioInput!
-    $condition: ModelAIScenarioConditionInput
-  ) {
-    updateAIScenario(input: $input, condition: $condition) {
-      id
-      title
-      description
-      firstMessage
-      role
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
-export const deleteAIScenario = /* GraphQL */ `
-  mutation DeleteAIScenario(
-    $input: DeleteAIScenarioInput!
-    $condition: ModelAIScenarioConditionInput
-  ) {
-    deleteAIScenario(input: $input, condition: $condition) {
-      id
-      title
-      description
-      firstMessage
-      role
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
 export const createWebsite = /* GraphQL */ `
   mutation CreateWebsite(
     $input: CreateWebsiteInput!
@@ -200,57 +149,6 @@ export const deleteWebsite = /* GraphQL */ `
     $condition: ModelWebsiteConditionInput
   ) {
     deleteWebsite(input: $input, condition: $condition) {
-      id
-      title
-      url
-      description
-      image
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
-export const createYoutube = /* GraphQL */ `
-  mutation CreateYoutube(
-    $input: CreateYoutubeInput!
-    $condition: ModelYoutubeConditionInput
-  ) {
-    createYoutube(input: $input, condition: $condition) {
-      id
-      title
-      url
-      description
-      image
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
-export const updateYoutube = /* GraphQL */ `
-  mutation UpdateYoutube(
-    $input: UpdateYoutubeInput!
-    $condition: ModelYoutubeConditionInput
-  ) {
-    updateYoutube(input: $input, condition: $condition) {
-      id
-      title
-      url
-      description
-      image
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
-export const deleteYoutube = /* GraphQL */ `
-  mutation DeleteYoutube(
-    $input: DeleteYoutubeInput!
-    $condition: ModelYoutubeConditionInput
-  ) {
-    deleteYoutube(input: $input, condition: $condition) {
       id
       title
       url

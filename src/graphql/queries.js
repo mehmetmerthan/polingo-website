@@ -73,42 +73,6 @@ export const listWords = /* GraphQL */ `
     }
   }
 `;
-export const getAIScenario = /* GraphQL */ `
-  query GetAIScenario($id: ID!) {
-    getAIScenario(id: $id) {
-      id
-      title
-      description
-      firstMessage
-      role
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
-export const listAIScenarios = /* GraphQL */ `
-  query ListAIScenarios(
-    $filter: ModelAIScenarioFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    listAIScenarios(filter: $filter, limit: $limit, nextToken: $nextToken) {
-      items {
-        id
-        title
-        description
-        firstMessage
-        role
-        createdAt
-        updatedAt
-        __typename
-      }
-      nextToken
-      __typename
-    }
-  }
-`;
 export const getWebsite = /* GraphQL */ `
   query GetWebsite($id: ID!) {
     getWebsite(id: $id) {
@@ -130,42 +94,6 @@ export const listWebsites = /* GraphQL */ `
     $nextToken: String
   ) {
     listWebsites(filter: $filter, limit: $limit, nextToken: $nextToken) {
-      items {
-        id
-        title
-        url
-        description
-        image
-        createdAt
-        updatedAt
-        __typename
-      }
-      nextToken
-      __typename
-    }
-  }
-`;
-export const getYoutube = /* GraphQL */ `
-  query GetYoutube($id: ID!) {
-    getYoutube(id: $id) {
-      id
-      title
-      url
-      description
-      image
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
-export const listYoutubes = /* GraphQL */ `
-  query ListYoutubes(
-    $filter: ModelYoutubeFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    listYoutubes(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         title
