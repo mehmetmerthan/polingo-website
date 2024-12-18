@@ -84,6 +84,13 @@ export default function Dictionary() {
   useEffect(() => {
     fetchWordsData();
   }, [value]);
+  const listEmptyComponent = () => {
+    return (
+      <View>
+        <Text style={styles.listEmptyText}>No words added yet</Text>
+      </View>
+    );
+  };
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -128,6 +135,7 @@ export default function Dictionary() {
             style={styles.listItemContainer}
             onEndReached={loadMoreWords}
             onEndReachedThreshold={0.1}
+            ListEmptyComponent={listEmptyComponent}
           />
         </View>
       </View>
@@ -210,5 +218,11 @@ const styles = StyleSheet.create({
   floatingButtonText: {
     color: "white",
     fontSize: 30,
+  },
+  listEmptyText: {
+    color: "rgb(229, 229, 231)",
+    fontSize: 40,
+    fontWeight: "bold",
+    textAlign: "center",
   },
 });
