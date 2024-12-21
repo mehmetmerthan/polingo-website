@@ -20,7 +20,7 @@ The words saved via the **Web Extension** and **Mobile App** are automatically s
 ## Screenshots
 
 1. **Personal Dictionary**  
-   ![Personal Dictionary Website Screenshot](link-to-your-image)
+   ![Personal Dictionary Website Screenshot](/assets/polingo-web.png)
 
 ## Relationship with Other Platforms
 
