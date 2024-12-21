@@ -5,7 +5,6 @@ node_modules/
 
 # Expo
 .expo/
-dist/
 web-build/
 expo-env.d.ts
 
@@ -56,3 +55,4 @@ amplifytools.xcconfig
 .secret-*
 **.sample
 #amplify-do-not-edit-end
+.vercel
